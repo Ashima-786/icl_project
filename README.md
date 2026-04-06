@@ -1,10 +1,8 @@
-# SustainWear 🌱
+SustainWear
 
 SustainWear is a Sustainable Fashion Marketplace built using MERN Stack that helps users discover and purchase eco-friendly fashion products.
 
----
-
-## 🚀 Features
+Features
 
 - User Signup & Login Authentication
 - Marketplace for Sustainable Products
@@ -15,31 +13,27 @@ SustainWear is a Sustainable Fashion Marketplace built using MERN Stack that hel
 - User Profile Dropdown
 - Modern Splash Screen UI
 
----
+Tech Stack
 
-## 🛠 Tech Stack
-
-### Frontend
+Frontend
 
 - React.js
 - Vite
 - React Router
 - CSS
 
-### Backend
+Backend
 
 - Node.js
 - Express.js
 - MongoDB
 - Mongoose
 
-### Payment
+Payment
 
 - Razorpay Integration
 
----
-
-## 🌱 Project Flow
+Project Flow
 
 Splash Screen  
 ↓  
@@ -57,6 +51,11 @@ Order Saved
 ↓  
 My Listings
 
----
+Project Structure
 
-## 📁 Project Structure
+sustainable-fashion
+├── frontend (React)
+├── backend (Node + Express)
+├── models
+├── routes
+└── pages
