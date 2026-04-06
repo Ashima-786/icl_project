@@ -1,21 +1,41 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
+import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
+import Login from "./pages/Login";
 import Marketplace from "./pages/Marketplace";
 import AddProduct from "./pages/AddProduct";
 import Brand from "./pages/Brand";
 import ProductDetails from "./pages/ProductDetails";
+import Signup from "./pages/Signup";
+import Splash from "./pages/Splash";
+import Payment from "./pages/Payment";
+import MyListings from "./pages/MyListings";
 
 function App() {
   return (
     <BrowserRouter>
+      <Main />
+    </BrowserRouter>
+  );
+}
 
-      <Navbar />
+function Main() {
+
+  const location = useLocation();
+
+  return (
+    <>
+      {/* Hide Navbar on Splash, Login, Signup */}
+      {location.pathname !== "/" &&
+       location.pathname !== "/login" &&
+       location.pathname !== "/signup" && <Navbar />}
 
       <Routes>
 
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Splash />} />
+
+        <Route path="/home" element={<Home />} />
 
         <Route path="/marketplace" element={<Marketplace />} />
 
@@ -25,9 +45,13 @@ function App() {
 
         <Route path="/product/:id" element={<ProductDetails />} />
 
-      </Routes>
+        <Route path="/login" element={<Login />} />
 
-    </BrowserRouter>
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/payment" element={<Payment />} />
+        <Route path="/my-products" element={<MyListings />} />
+      </Routes>
+    </>
   );
 }
 

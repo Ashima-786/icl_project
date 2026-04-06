@@ -17,6 +17,18 @@ app.use("/api/products", productRoutes);
 // Debug
 console.log("MONGO_URI:", process.env.MONGO_URI);
 
+const authRoutes = require("./routes/authRoutes");
+
+app.use("/", authRoutes);
+
+const orderRoutes = require("./routes/orderRoutes");
+
+app.use("/", orderRoutes);
+
+const paymentRoutes = require("./routes/paymentRoutes");
+
+app.use("/", paymentRoutes);
+
 // MongoDB Connection
 mongoose.connect(process.env.MONGO_URI)
 .then(() => {
