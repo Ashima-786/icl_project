@@ -854,3 +854,147 @@ body {
   font-size: 12px;
   color: gray;
 }
+.sell-btn {
+  background: linear-gradient(45deg, #ff6a00, #ffcc00, #ff3cac);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.sell-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.sell-btn {
+  background: #111;
+  color: #00ffcc;
+  border: 2px solid #00ffcc;
+  padding: 8px 16px;
+  border-radius: 10px;
+  text-shadow: 0 0 5px #00ffcc;
+  box-shadow: 0 0 10px #00ffcc;
+}
+.sell-btn {
+  background-color: #ff4d6d;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.sell-btn:hover {
+  background-color: #e63950;
+}
+.sell-btn {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+.sell-btn {
+  background: linear-gradient(135deg, #ff8c00, #ff5e00, #ffb347);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+
+  /* Glow effect */
+  box-shadow: 0 0 10px rgba(255, 140, 0, 0.6),
+              0 0 20px rgba(255, 94, 0, 0.4),
+              0 0 30px rgba(255, 179, 71, 0.3);
+
+  transition: all 0.3s ease;
+}
+body {
+  background: linear-gradient(135deg, #fff5e6, #ffe0cc, #ffd6b3);
+  font-family: 'Poppins', sans-serif;
+}
+/* 🌿 Background (soft white with hint of green) */
+body {
+  background: linear-gradient(135deg, #f6fff8, #e6f9ec);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* 🧊 Main Card */
+.add-product {
+  max-width: 420px;
+  margin: 50px auto;
+  padding: 25px;
+
+  background: #ffffff;
+  border-radius: 18px;
+
+  box-shadow: 0 8px 25px rgba(0, 128, 0, 0.1);
+}
+
+/* 🌱 Heading */
+.add-product h2 {
+  text-align: center;
+  color: #2e7d32;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* 📦 Form */
+.add-product form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* ✍️ Inputs */
+.add-product input,
+.add-product select,
+.add-product textarea {
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #c8e6c9;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* 🌿 Focus effect */
+.add-product input:focus,
+.add-product select:focus,
+.add-product textarea:focus {
+  border-bottom: 2px solid #2e7d32;
+}
+
+/* 🧼 Textarea */
+.add-product textarea {
+  resize: none;
+  height: 70px;
+}
+
+/* 🚀 Button */
+.add-product button {
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+
+  background: linear-gradient(135deg, #43a047, #2e7d32);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(67, 160, 71, 0.4);
+}
+
+/* ✨ Hover */
+.add-product button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(67, 160, 71, 0.6);
+}
